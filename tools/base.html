@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal web</title>
+</head>
+<body>
+    <!--header and menu-->
+
+
+    <h1>{% block title %}{% endblock title %} my personal web</h1>
+
+    <ul>
+        <li><a href="{% url 'home' %}">home</a></li>
+        <li><a href="{% url 'about' %}">about</a></li>
+        <li><a href="{% url 'contact' %}">contact</a></li>
+        <li><a href="{% url 'portfolio' %}">portfolio</a></li>
+    </ul>
+
+    <!--Base Content-->   
+    {% block content %}{% endblock content %}
+        
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% block title %}About{% endblock title %}
+    
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block header %}
+<h1>About me</h1>
+<span class="subheading">Soporte tecnico Informático</span>
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src=" {% static 'core/img/avatar.png' %}" alt="avatar">
+  </div>
+  <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Enrique Rodriguez</h2>   
+    <p>I have been studying self-taught for about 1 year, in addition to the course "Side by Side Python Fullstack"
+      promoted by the government of Buenos Aires, Argentina.
+      In addition to the self-taught studies, I have experience in systems departments working in networks,
+      servers and security cameras, so I have experience working under pressure with the ticket system </p>
+  </div>
+{% endblock %}
